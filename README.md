@@ -11,7 +11,7 @@
 
 Du må start med å lage en fork av dette repoet til din egen GitHub konto. 
 
-## Lage en klone av din Fork (av dette repoet) inn i ditt Cloud 9 miljø
+## Lag en klone av din Fork (av dette repoet) inn i ditt Cloud 9 miljø
 
 Fra Terminal i Cloud 9. Klone repository med HTTPS URL. Eksempel ;
 ```

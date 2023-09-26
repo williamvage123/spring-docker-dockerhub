@@ -192,6 +192,10 @@ Kan du start to versjoner av samme container, hvor en lytter på port 8080 og de
 
 ## Registrer deg på Docker hub
 
+!Viktig! Passordet ditt til Dockerhub blir liggende på EC2 Instansen (Serveren) i AWS, og i utgangspunktet kan alle dine medstudenter 
+logge seg inn i ditt Cloud9 miljø, siden vi deler passord. Jeg vil derfor anbefale å lage en helt ny DockerHub bruker for PGR301, og 
+ikke bruke et passord du vanligvis bruker. 
+
 https://hub.docker.com/signup
 
 ## Bygg en container og push til Docker hub 

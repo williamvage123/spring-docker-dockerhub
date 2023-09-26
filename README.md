@@ -11,6 +11,13 @@
 
 Du må start med å lage en fork av dette repoet til din egen GitHub konto. 
 
+## Lage en klone av din Fork (av dette repoet) inn i ditt Cloud 9 miljø
+
+Fra Terminal i Cloud 9. Klone repository med HTTPS URL. Eksempel ;
+```
+git clone https://github.com/≤github bruker>/spring-docker-dockerhub.git
+```
+
 ## Logg i Cloud 9 miljøet ditt
 
 * URL for innlogging er https://244530008913.signin.aws.amazon.com/console
@@ -28,13 +35,6 @@ Du kan hoppe over dette steget hvis du allerede har laget et Token
 * Gi token et navn, det skal også ha "repository", og "workflow" rettigheter
 * NB. Ta vare på tokenet et sted, du trenger dette senere når du skal gjøre ```git push```
 
-### Lage en klone av din Fork (av dette repoet) inn i ditt Cloud 9 miljø
-
-Fra Terminal i Cloud 9. Klone repository med HTTPS URL. Eksempel ;
-
-```
-git clone https://github.com/≤github bruker>/spring-docker-dockerhub.git
-```
 
 Får du denne feilmeldingen ```bash: /spring-docker-dockerhub: Permission denied``` - så glemte du å bytte ut <github bruker> med
 ditt eget Github brukernavn :-)

@@ -25,7 +25,7 @@ Du kan hoppe over dette steget hvis du allerede har laget et Token
 
 * Når du skal autentisere deg mot din GitHub konto fra Cloud 9 trenger du et access token.  Gå til  https://github.com/settings/tokens og lag et nytt.
 * Velg "Classic"
-* Gi token et navn, det skal også ha "repository", og "forkflow" rettigheter
+* Gi token et navn, det skal også ha "repository", og "workflow" rettigheter
 * NB. Ta vare på tokenet et sted, du trenger dette senere når du skal gjøre ```git push```
 
 ### Lage en klone av din Fork (av dette repoet) inn i ditt Cloud 9 miljø

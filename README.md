@@ -277,4 +277,5 @@ Gjør endringer på koden i main branch - se at GitHub actions lager et nytt con
 
 # Bonus challenge
 
+* Kan du laste opp image til både AWS ECR, men også Docker Hub fra GitHub Actions workflowen?
 * Kan du kjøre Spring boot applikasjonen din på tjenesten AWS Apprunner ? https://docs.aws.amazon.com/apprunner/latest/dg/what-is-apprunner.html

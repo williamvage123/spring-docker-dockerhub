@@ -274,3 +274,7 @@ jobs:
           docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/glenn:$rev
 ```
 Gjør endringer på koden i main branch - se at GitHub actions lager et nytt container image og laster opp til ECR. 
+
+# Bonus challenge
+
+* Kan du kjøre Spring boot applikasjonen din på tjenesten AWS Apprunner ? https://docs.aws.amazon.com/apprunner/latest/dg/what-is-apprunner.html

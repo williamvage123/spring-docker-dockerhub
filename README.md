@@ -261,6 +261,8 @@ docker tag <ditt tagnavn> 244530008913.dkr.ecr.eu-west-1.amazonaws.com/<ditt ECR
 docker push 244530008913.dkr.ecr.eu-west-1.amazonaws.com/<ditt ECR repo navn>
 ```
 
+Gå til tjenesten ECR i AWS og se at du har fått et container image i ditt registry
+
 ## Få GitHub Actions til å bygge & pushe et nytt Image hver gang noen lager en ny commit på main branch 
 
 Her er et eksempel på en workflow tatt fra foreleser sitt miljø, du må gjøre endringer for å tilpasse den ditt eget? 

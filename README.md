@@ -265,10 +265,12 @@ Gå til tjenesten ECR i AWS og se at du har fått et container image i ditt regi
 
 ## Få GitHub Actions til å bygge & pushe et nytt Image hver gang noen lager en ny commit på main branch 
 
+For å lage github actions workflows lager du en fil under .github/workflows katalogen i repsoitory.
+
 Her er et eksempel på en workflow tatt fra foreleser sitt miljø, du må gjøre endringer for å tilpasse den ditt eget? 
 Lykke til!
 
-PS. Du må først legge til Repository secrets for å gi GitHub actions AWS nøkler!
+NB. Du må først legge til Repository secrets for å gi GitHub actions AWS nøkler!
 
 ```yaml
 name: Publish Docker image

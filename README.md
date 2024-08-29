@@ -17,6 +17,8 @@ Fra Terminal i Cloud 9. Klone repository med HTTPS URL. Eksempel ;
 ```
 git clone https://github.com/≤github bruker>/spring-docker-dockerhub.git
 ```
+Får du denne feilmeldingen ```bash: /spring-docker-dockerhub: Permission denied``` - så glemte du å bytte ut <github bruker> med
+ditt eget Github brukernavn :-)
 
 ## Logg i Cloud 9 miljøet ditt
 
@@ -36,8 +38,7 @@ Du kan hoppe over dette steget hvis du allerede har laget et Token
 * NB. Ta vare på tokenet et sted, du trenger dette senere når du skal gjøre ```git push```
 
 
-Får du denne feilmeldingen ```bash: /spring-docker-dockerhub: Permission denied``` - så glemte du å bytte ut <github bruker> med
-ditt eget Github brukernavn :-)
+
 
 ## Konfigurer Git i Cloud9
 

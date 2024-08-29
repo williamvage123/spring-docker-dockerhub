@@ -121,7 +121,7 @@ CONTAINER ID   IMAGE         COMMAND    CREATED         STATUS                  
 5a89931c5af6   hello-world   "/hello"   2 minutes ago   Exited (0) 2 minutes ago             fervent_bell
 ```
 
-Slett den stoppede containeren med 
+Avslutt den stoppede containeren med 
 
 ```aidl
 docker rm <container id> - i eksemplet over 5a89931c5af6

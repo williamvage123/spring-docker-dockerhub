@@ -217,9 +217,11 @@ docker tag fantasticapp glennbech/fantasticapp
 docker push glennbech/fantasticapp
 ```
 
+Gå til dockerhub.com og se på container image du nettopp lastet opp.
+
 ## Share the joy! 
 
-Del gjerne Docker hub container image navnet med andre, så de kan forsøke å kjre det med ```docker run``` 
+Del gjerne Docker hub container image navnet med andre, så de kan forsøke å kjre det med ```docker run``` mitt container image heter ````glennbech/shaky```
 
 ## Lag et AWS  ECR repository for din container
 

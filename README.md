@@ -121,11 +121,13 @@ CONTAINER ID   IMAGE         COMMAND    CREATED         STATUS                  
 5a89931c5af6   hello-world   "/hello"   2 minutes ago   Exited (0) 2 minutes ago             fervent_bell
 ```
 
-Avslutt den stoppede containeren med 
+Slet den stoppede containeren med 
 
 ```aidl
 docker rm <container id> - i eksemplet over 5a89931c5af6
 ```
+
+Docker-kommandoen docker rm brukes til å fjerne en eller flere stoppede containere. Den sletter containerens filsystem og all tilhørende data. Kommandoen fjerner ikke kjørende containere; den fungerer kun på stoppede containere.
 
 Kjør ```docker images``` igjen, og kjør kommandoen 
 
@@ -133,6 +135,7 @@ Kjør ```docker images``` igjen, og kjør kommandoen
 docker image rm <REPOSITORY>
 ```
 
+Docker-kommandoen docker images rm brukes  til å slette et container image.
 
 Installer maven i Cloud 9. Vi skal forsøke å kjøre Spring Boot applikasjonen fra Maven i terminalen
 

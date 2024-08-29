@@ -235,6 +235,22 @@ Fra dit Cloud9 miljøe, autentiser docker mot AWS ECR med kommandoen
 aws ecr get-login-password --region eu-west-1 | docker login --username AWS --password-stdin 244530008913.dkr.ecr.eu-west-1.amazonaws.com
 ````
 
+Denne ser kanskje litt kryptisk ut, dette er hva som skjer steg for steg 
+
+### aws ecr get-login-password --region eu-west-1
+
+Denne delen av kommandoen bruker AWS CLI (aws) til å hente et midlertidig innloggingspassord for ECR (Elastic Container Registry).
+get-login-password er en AWS-kommando som returnerer et passord som er nødvendig for å autentisere Docker mot ECR.
+--region eu-west-1 spesifiserer hvilken region du vil hente passordet for. I dette tilfellet er regionen eu-west-1 (Vest-Europa, Irland).
+
+### | docker login --username AWS --password-stdin 244530008913.dkr.ecr.eu-west-1.amazonaws.com 
+
+* Symbolet | er en pipe som brukes til å sende output fra den første kommandoen (passordet) som input til den neste kommandoen.
+*  docker login --username AWS --password-stdin 244530008913.dkr.ecr.eu-west-1.amazonaws.com er kommandoen for å logge inn på Docker, hvor --username AWS angir at brukernavnet er AWS.
+--password-stdin gjør det mulig for Docker å lese passordet fra standard input (stdin), som i dette tilfellet kommer fra den første kommandoen via pipen.
+* 244530008913.dkr.ecr.eu-west-1.amazonaws.com er URL-en til ECR-registeret du prøver å logge inn på.
+* Dette spesifiserer nøyaktig hvilket ECR-register Docker skal autentisere mot.
+    
 ##  Push et container image til dit ECR repository
 
 Eksempel:

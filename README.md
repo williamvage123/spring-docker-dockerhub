@@ -237,7 +237,7 @@ Del gjerne Docker hub container image navnet med andre, så de kan forsøke å k
 
 ## Lag et AWS  ECR repository for din container
 
-Finn ut av det selv :-) Kan du gjøre det fra CLI istedet for UI?  Velg et navn med dine initialer, så
+Finn ut av det selv :-) Kan du gjøre det fra AWS CLI istedet for UI?  Velg et navn med dine initialer, så
 vi ikke får navnekonflikter. 
 
 # Autentiser Docker i ditt Cloud 9 miljø mot AWS ECR

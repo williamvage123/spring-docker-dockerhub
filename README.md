@@ -202,6 +202,15 @@ ikke bruke et passord du vanligvis bruker.
 
 https://hub.docker.com/signup
 
+### Lag et security token på Docker hub
+
+Når du autentiserer deg mot Dockerhub fra Cloud9, er det beste praksis å ikke benytte passord men et Token. Et token kan du lage ved å klikke på 
+ditt profilbilde (øverst til høyre) - og deretter "Account Settings", Personal Access tokens, og Generate Token. 
+
+* Gi tokenet et navn og read/write/delete permissions.
+*  
+
+
 ## Bygg en container og push til Docker hub 
 
 ```

@@ -111,7 +111,7 @@ Kjør først kommandoen ```docker ps``` for å se hvilke containere som kjører.
 docker ps
 ```
 
-Legger du på -a argumentet, vil du også se toppede containere  
+Legger du på -a argumentet, vil du også se stoppede containere  
 
 ```aidl
 docker ps -a 

@@ -161,11 +161,11 @@ curl localhost:8080
 
 Hvis du vil kan du også velge Tools/Preview running application fra menyen i Cloud 9 istedet.
 
-Vi skal nå lage en Dockerfile for Spring boot applikasjonen. Vi skal bruke en "multi stage" Docker fil, som 
+Nå skal vi lage en Dockerfile for Spring Boot-applikasjonen. Vi skal bruke en "multi stage" Docker fil, som 
 først lager en container som har alle verktøy til å bygge applikasjonen, maven osv. Spring boot applikasjonen blir kompilert og bygget i denne containeren. 
 Deretter bruker den resultatet fra byggeprosessen, JAR filen til å lage en runtime container for applikasjonen. 
 
-Ta gjerne en pause og kes gjerne mer om multi stage builds her; https://docs.docker.com/develop/develop-images/multistage-build/
+Ta gjerne en pause og les gjerne mer om multi stage builds her; https://docs.docker.com/develop/develop-images/multistage-build/
 
 Kopier dette innholder inn i en  ```Dockerfile``` i rotkatalogen
 
@@ -182,7 +182,7 @@ ENTRYPOINT ["java","-jar","/app/application.jar"]
 
 ```
 
-Prøv å byggee en Docker container
+Prøv å bygge en Docker container
 
 ```sh
     docker build . --tag <give the image a name>

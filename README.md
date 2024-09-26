@@ -214,8 +214,6 @@ Når du autentiserer deg mot Dockerhub fra Cloud9, er det beste praksis å ikke 
 ditt profilbilde (øverst til høyre) - og deretter "Account Settings", Personal Access tokens, og Generate Token. 
 
 * Gi tokenet et navn og read/write/delete permissions.
-*  
-
 
 ## Bygg en container og push til Docker hub 
 
@@ -236,7 +234,7 @@ Gå til dockerhub.com og se på container image du nettopp lastet opp.
 
 ## Share the joy! 
 
-Del gjerne Docker hub container image navnet med andre, så de kan forsøke å kjre det med ```docker run``` mitt container image heter ```glennbech/shaky```
+Del gjerne Docker hub container image navnet med andre, så de kan forsøke å kjøre det med ```docker run``` mitt container image heter ```glennbech/shaky```
 
 ## Lag et AWS  ECR repository for din container
 

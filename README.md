@@ -170,16 +170,19 @@ Ta gjerne en pause og les gjerne mer om multi stage builds her; https://docs.doc
 Kopier dette innholder inn i en  ```Dockerfile``` i rotkatalogen
 
 ```dockerfile
-FROM maven:3.6-jdk-11 as builder
+
+# Build the Maven project using Java 17
+FROM maven:3.8-eclipse-temurin-17 as builder
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 RUN mvn package
 
-FROM adoptopenjdk/openjdk11:alpine-slim
+# Use a base image with Java 17
+FROM eclipse-temurin:17-jre-alpine
+WORKDIR /app
 COPY --from=builder /app/target/*.jar /app/application.jar
-ENTRYPOINT ["java","-jar","/app/application.jar"]
-
+ENTRYPOINT ["java", "-jar", "/app/application.jar"]
 ```
 
 Prøv å bygge en Docker container

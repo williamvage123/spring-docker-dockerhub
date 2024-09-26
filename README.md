@@ -130,7 +130,11 @@ Slet den stoppede containeren med
 docker rm <container id> - i eksemplet over 5a89931c5af6
 ```
 
-Docker-kommandoen docker rm brukes til å fjerne en eller flere stoppede containere. Den sletter containerens filsystem og all tilhørende data. Kommandoen fjerner ikke kjørende containere; den fungerer kun på stoppede containere.
+Docker-kommandoen docker rm brukes til å fjerne en eller flere stoppede containere. Kommandoen fjerner ikke kjørende containere; den fungerer kun på stoppede containere, men du kan overstyre dette med 
+
+```
+docker rm -f [container_id]
+```
 
 Kjør ```docker images``` igjen, og kjør kommandoen 
 
